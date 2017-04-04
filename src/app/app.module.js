@@ -18,6 +18,12 @@ var services_component_1 = require('./components/services/services.component');
 var schedule_component_1 = require('./components/schedule/schedule.component');
 var clients_component_1 = require('./components/clients/clients.component');
 var client_component_1 = require('./components/client/client.component');
+var product_component_1 = require('./components/product/product.component');
+var service_component_1 = require('./components/service/service.component');
+var month_component_1 = require('./components/month/month.component');
+var week_component_1 = require('./components/week/week.component');
+var day_component_1 = require('./components/day/day.component');
+var day_detail_component_1 = require('./components/day-detail/day-detail.component');
 var AppModule = (function () {
     function AppModule() {
     }
@@ -31,7 +37,13 @@ var AppModule = (function () {
                 services_component_1.ServicesComponent,
                 schedule_component_1.ScheduleComponent,
                 clients_component_1.ClientsComponent,
-                client_component_1.ClientComponent
+                client_component_1.ClientComponent,
+                product_component_1.ProductComponent,
+                service_component_1.ServiceComponent,
+                month_component_1.MonthComponent,
+                week_component_1.WeekComponent,
+                day_component_1.DayComponent,
+                day_detail_component_1.DayDetailComponent
             ],
             imports: [
                 platform_browser_1.BrowserModule,
@@ -44,7 +56,9 @@ var AppModule = (function () {
                     { path: 'services', component: services_component_1.ServicesComponent },
                     { path: 'schedule', component: schedule_component_1.ScheduleComponent },
                     { path: 'clients', component: clients_component_1.ClientsComponent },
-                    { path: 'client', component: client_component_1.ClientComponent }
+                    { path: 'client', component: client_component_1.ClientComponent },
+                    { path: 'client-detail', component: ClientDetailComponent },
+                    { path: 'day-detail', component: day_detail_component_1.DayDetailComponent }
                 ])
             ],
             providers: [],
